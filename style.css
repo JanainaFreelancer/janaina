@@ -75,6 +75,11 @@ nav a {
     font-size: 18px;
     line-height: 150%;
     color: var(--text-color);
+    transition: all .3s;
+}
+
+nav a:hover {
+    color: var(--hover-color);
 }
 
 .hero {
