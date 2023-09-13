@@ -1,0 +1,135 @@
+@media (max-width: 1200px) {
+    .hero {
+        padding-bottom: 0;
+        transform: translate(0, 50%);
+    }
+    .hero .about-img {
+        flex-direction: row;
+        justify-content: end;
+    }
+    .about-img .img1 {
+        width: 80%;
+    }
+}
+
+@media (max-width: 991px) {
+    /* h1{
+        font-size: 3.2rem;
+    }
+    .about .tag{
+        margin-top: 0.8rem;
+    }
+    .resumo{
+        margin-top: 1.6rem;
+    }
+    .about a{
+        margin-top: 2.4rem;
+    } */
+    .menu.active{
+        padding-bottom: 0rem;
+    }
+    .container .menu{
+        padding-bottom: 4.8rem;
+    }
+    .hero {
+        transform: translate(0, 0);
+    }
+    .hero .container {
+        flex-direction: column-reverse;
+        transform: none;
+        padding-top: 0rem;
+    }
+    .hero .about {
+        display: flex;
+        margin-top: 6.4rem;
+        max-width: 80rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .hero .resumo {
+        text-align: left;
+    }
+    .about .tag {
+        margin-top: 0.8rem;
+    }
+    .about a {
+        margin-top: 2.4rem;
+    }
+    .contato h2 {
+        font-size: 2.4rem;
+    }
+    .form {
+        padding-right: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .trabalhos {
+        flex-direction: column;
+    }
+    .portfolio h2 {
+        text-align: center;
+        display: block;
+    }
+    .trabalhos .item {
+        width: 100%;
+        max-width: 100%;
+        margin: 2.4rem 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero .container .box-content{
+        flex-direction: column-reverse;
+        transform: translate(0, 5%);
+    }
+    .hero .about{
+        align-items: center;
+    }
+    h1 {
+        font-size: 3.2rem;
+        text-align: center;
+    }
+    .hero .resumo{
+        text-align: center;
+    }
+    .hero .about-img{
+        justify-content: center;
+    }
+    .about-img .img1 {
+        width: 70%;
+    }
+    .trabalhos{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contato{
+        padding: 4rem 0;
+    }
+    .fale-comigo {
+        flex-direction: column;
+    }
+    .form {
+        padding-right: 0;
+    }
+    .contato h2 {
+        text-align: center;
+    }
+    form button {
+        max-width: 100%;
+    }
+    .whatsapp {
+        width: 100%;
+        max-width: 50.5rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero{
+        transform: translate(0, 10%);
+    }
+    .trabalhos{
+        gap: 3.2rem;
+        margin-top: 2.4rem;
+    }
+}

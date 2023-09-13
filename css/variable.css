@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Riviera Bold';
+    src: url(../fontes/RivieraNightsTrial-Bold.otf);
+}
+
+@font-face {
+    font-family: 'Riviera regular';
+    src: url(../fontes/RivieraNightsTrial-Regular.otf);
+}
+
+* {
+    text-decoration: none;
+}
+
+:root {
+    --primary-color: #17181C;
+    --blue-color: #79C0FF;
+    --purple-color: #C7A0F2;
+    --gray-color: #E3E7EE;
+    --white-color: #F2F5FA;
+}
+
+h1 {
+    font-family: 'Riviera regular';
+    color: var(--white-color);
+    font-size: 4rem;
+}
+
+h1 span {
+    font-family: 'Riviera Bold';
+    color: var(--purple-color);
+    font-size: 4rem;
+}
+
+h2 {
+    font-family: 'Riviera Bold';
+    font-weight: 900;
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+    color: var(--primary-color);
+}
+
+h2 span {
+    color: var(--purple-color);
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+}
+
+
+/* 
+h3{
+    font-family: 'Riviera regular';
+    font-size: 1.6rem;
+    color: var(--gray-color);
+}
+h3 span{
+    border: 0.5px solid  var(--gray-color);
+    padding: 5px 10px;
+    border-radius: 50%;
+    margin-right: 0.8rem;
+}
+p{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    color: var(--primary-color);
+} */

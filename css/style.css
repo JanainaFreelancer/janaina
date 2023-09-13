@@ -1,0 +1,371 @@
+.menu.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F2F5FA;
+    padding-bottom: 4rem;
+    z-index: 9999;
+    box-shadow: 60px 3px 3px rgba(0, 0, 0, 0.041);
+}
+
+.menu #logo-dark {
+    display: none;
+}
+
+.menu #logo-light {
+    display: block;
+}
+
+.menu.active #logo-light {
+    display: none;
+}
+
+.menu.active #logo-dark {
+    display: block;
+}
+
+.menu.active li a {
+    color: #17181C;
+    /* font-weight: 800; */
+}
+
+header {
+    background-color: var(--primary-color);
+    padding-bottom: 4rem;
+    height: 90vh;
+}
+
+.container .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 4.8rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li {
+    margin-left: 3.2rem;
+}
+
+ul li:first-child {
+    margin-left: 0;
+}
+
+li a {
+    font-size: 1.6rem;
+    color: var(--white-color);
+    transition: color .3s;
+}
+
+li a:hover {
+    color: #BA8CED;
+}
+
+.btn-primary {
+    background-color: var(--purple-color);
+    color: #17181C !important;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    padding: 0.8rem 2.4rem;
+    transition: all .3s;
+    border-radius: 2px;
+}
+
+.btn-primary:hover {
+    background-color: #BA8CED;
+}
+
+.hero {
+    background-color: var(--primary-color);
+    padding-bottom: 4rem;
+}
+
+/* .hero .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transform: translate(0, 50%);
+} */
+
+.hero .container .box-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transform: translate(0, 50%);
+}
+
+.hero .about {
+    width: 100%;
+    max-width: 54.6rem;
+}
+
+.about .tag {
+    font-family: 'Riviera regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #79C0FF;
+    opacity: 0.8;
+    margin-top: 1.6rem;
+}
+
+.tag span {
+    color: var(--white-color);
+}
+
+.about a {
+    font-family: 'Riviera Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    color: var(--white-color);
+    opacity: 0.8;
+    display: block;
+    margin-top: 4rem;
+}
+
+.about a span {
+    color: var(--purple-color);
+}
+
+.hero .about-img {
+    width: 100%;
+    max-width: 53.4rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.about-img .img1 {
+    z-index: 0;
+    animation: floating 4s infinite;
+}
+
+.img-front {
+    position: relative;
+}
+
+.about-img .img2,
+.img3,
+.img4 {
+    z-index: 2;
+}
+
+.about-img .img2 {
+    width: 100%;
+    margin-top: -185px;
+    margin-left: 189px;
+}
+
+.resumo {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: #E3E7EE;
+    opacity: 0.8;
+    margin-top: 2.4rem;
+}
+
+.portfolio {
+    background-color: var(--white-color);
+    padding: 8rem 0;
+}
+
+.trabalhos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    margin-top: 4.8rem;
+}
+
+.trabalhos a {
+    width: 100%;
+}
+
+.trabalhos a .item {
+    background-color: var(--primary-color);
+    width: 100%;
+    max-width: 100%;
+    height: 33rem;
+    border-radius: 0.4rem;
+}
+.trabalhos span.tag{
+    font-family: 'Riviera Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    color: var(--primary-color);
+    opacity: 0.8;
+    display: block;
+    margin-top: 2.4rem;
+}
+.trabalhos p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    color: var(--primary-color);
+    opacity: 0.8;
+    display: block;
+    margin-top: 0.4rem;
+}
+.trabalhos .louis {
+    background-image: url(../img/louis-thumb.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.trabalhos .dental {
+    background-image: url(../img/thumb-dental.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.trabalhos .kenic {
+    background-image: url(../img/thumb-kenic.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.parent-item{
+    width: 100%;
+    height: 32.8rem;
+    overflow: hidden;
+	position: relative;
+	display: inline-block;
+}
+.trabalhos .item{
+    transition: all 1.1s;
+}
+.parent-item:hover .item{
+    transform: scale(1.2);
+}
+
+.contato {
+    padding: 8rem 0;
+    background-color: var(--primary-color);
+}
+
+.contato h2 {
+    color: var(--white-color);
+    text-align: center;
+}
+
+.fale-comigo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form {
+    width: 100%;
+    max-width: 48.8rem;
+}
+
+.form form {
+    margin-top: 5.6rem;
+}
+
+.form form>div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.4rem;
+}
+
+form label {
+    font-family: 'Riviera Bold';
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    color: var(--white-color);
+    opacity: 0.8;
+    margin-bottom: 0.8rem;
+}
+
+form input,
+textarea {
+    height: 4.8rem;
+    background-color: #292A2E;
+    border-radius: 0.2rem;
+    padding-left: 1.6rem;
+    outline: 1px solid #292A2E;
+}
+
+form textarea {
+    color: var(--white-color);
+    height: 10.7rem;
+    padding-top: 1.6rem;
+}
+
+form input,
+textarea:focus {
+    color: var(--white-color);
+}
+
+form button {
+    background-color: var(--purple-color);
+    border-radius: 0.2rem;
+    padding: 0.8rem 4rem;
+    max-width: 14.3rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: all .3s;
+}
+
+form button:hover {
+    background-color: #BA8CED;
+}
+
+.whatsapp {
+    width: 100%;
+    /* max-width: 40.5rem; */
+}
+
+.whatsapp span {
+    color: var(--blue-color);
+    margin-right: 0.8rem;
+}
+
+.whatsapp a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    color: var(--white-color);
+    opacity: 0.8;
+    display: block;
+    margin-top: 2.4rem;
+    text-align: center;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+    66% {
+        transform: translateY(-1.5rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
