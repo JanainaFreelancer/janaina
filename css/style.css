@@ -1,3 +1,6 @@
+.pjt{
+    display: block;
+}
 .menu.active {
     position: fixed;
     top: 0;
