@@ -5,127 +5,132 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Janaina</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-    <!-- FONTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/variable.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Janaina Barros</title>
 </head>
 
 <body>
     <header>
-        <div class="mobile">
-            <svg class="btn-close" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0008 13.5858L1.56543 0.150391L0.151216 1.5646L13.5866 15L0.151123 28.4355L1.56534 29.8497L15.0008 16.4142L28.4355 29.8489L29.8497 28.4347L16.415 15L29.8496 1.56543L28.4354 0.151216L15.0008 13.5858Z" fill="#171621"/>
-                </svg>
+        <div class="menu js-menu">
+            <div class="container">
 
-            <div class="js-menu menu-mobile">
-
-                <ul class="">
-                    <li><a href="#projeto">Projetos</a></li>
-                    <!-- <li><a href="#contato">Contato</a></li> -->
-                </ul>
-            </div>
-        </div>
-
-
-        <nav>
-            <div class="navegacao container">
-                <a href="" class="logo">Janaina</a>
-                <button id="btn-mobile">
-                    <svg width="40" height="18" viewBox="0 0 40 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H40V2H0V0ZM0 8H40V10H0V8ZM40 16H20V18H40V16Z" fill="#171621"/>
-                    </svg>                        
-                </button>
-                <ul>
-                    <li><a href="#projeto">Projetos</a></li>
-                    <!-- <li><a href="#contato">Contato</a></li> -->
-                </ul>
-            </div>
-        </nav>
-        <div class="container">
-
-            <div class="box">
-                <div class="hero">
-                    <h1>Ajudo sua empresa estar presente no mundo digital</h1>
-                    <p>Do layout ao código, sempre buscando a melhor maneira de criarmos um projeto incrível para sua empresa!</p>
+                <div class="menu">
+                    <a href="index.html">
+                        <img id="logo-light" src="img/svg/logo.svg" alt="Logo">
+                        <img id="logo-dark" src="img/svg/logo-dark.svg" alt="Logo">
+                    </a>
+                    <nav>
+                        <ul>
+                            <li><a class="js-link" href="#portfolio">Projetos</a></li>
+                            <li><a class="btn-primary js-link" href="#orcamento">Orçamento</a></li>
+                        </ul>
+                    </nav>
                 </div>
+
             </div>
-            <img class="arrow" src="imagens/arrow-icon.svg" alt="Seta">
+            <!--container-->
+        </div>
+        <div class="hero">
+            <div class="container">
+                <div class="box-content">
+                    <div class="about">
+                        <h1>Ajudo sua empresa estar presente no mundo digital</h1>
+                        <!-- <p class="tag"><span>//</span> Sou Web Designer</p> -->
+                        <p class="resumo">Do layout ao código, sempre buscando a melhor maneira de criarmos um projeto incrível para sua empresa!</p>
+                        <a href="#orcamento" class="js-link"><span>>></span>  Vamos criar um projeto?</a>
+                    </div>
+                    <!--about-->
+                    <div class="about-img">
+                        <img class="img1" src="img/svg/screen-bottom.svg" alt="Ilustração">
+                    </div>
+                </div>
+            </div><!--container-->
         </div>
     </header>
-    <section class="projects container js-section" id="projeto">
-        <h2>Projetos</h2>
-        <div class="project">
-            <div class="project-item">
-                <div class="project-image">
-                    <img src="imagens/Cover-louis-tomlinson.png" alt="">
-                </div>
-                <div class="project-content ">
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JAVASCRIPT</li>
-                        <li>WORDPRESS</li>
-                    </ul>
-                    <h3>Redesign site Louis Tomlinson</h3>
-                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
-                    <a href="https://janainafreelancer.github.io/louistomlinson/" target="_blank">Ver projeto ></a>
-                </div>
-            </div>
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2><span>//</span> Meus projetos</h2>
+            <div class="trabalhos">
+                <a href="http://neon.janainabarros.com/" target="_blank">
+                    <div class="parent-item">
+                        <div class="item kenic">
 
-            <div class="project-item">
-                <div class="project-image">
-                    <img src="imagens/Cover-camila-cabello.png" alt="">
-                </div>
-                <div class="project-content">
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JAVASCRIPT</li>
-                        <li>WORDPRESS</li>
-                    </ul>
-                    <h3>Redesign site Camila Cabello</h3>
-                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
-                    <a href="#">Ver projeto ></a>
-                </div>
-            </div>
+                        </div>
+                    </div>
+                    <span class="tag">Website</span>
+                    <p>Kenic</p>
+                </a>
 
-            <a href="">
-                <div class="project-item">
-                    <div class="project-image">
-                        <img src="imagens/Cover-dental-clinic.png" alt="">
+                <a href="http://louis.janainabarros.com/" target="_blank">
+                    <div class="parent-item">
+                        <div class="item louis">
+                        </div>
                     </div>
-                    <div class="project-content">
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JAVASCRIPT</li>
-                            <li>WORDPRESS</li>
-                        </ul>
-                        <h3>Redesign site Louis Tomlinson</h3>
-                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
-                        <a href="https://janainafreelancer.github.io/dentista/" target="_blank">Ver projeto ></a>
+                    <span class="tag">Website</span>
+                    <p>Louis Tomlinson</p>
+                </a>
+                <a href="http://neon.janainabarros.com/" target="_blank">
+                    <div class="parent-item">
+                        <div class="item dental">
+
+                        </div>
                     </div>
-                </div>
-            </a>
+                    <span class="tag">Website</span>
+                    <p>Dental Clinic</p>
+                </a>
+                <!-- <div class="item">
+
+                </div> -->
+            </div>
         </div>
     </section>
-
-    <!-- <section class="contato container js-section" id="contato">
-        <div class="contact-text">
-            <h2>Vamos criar um projeto juntos?</h2>
-            <p>Me chame no <a href="tel:+5511957087077" target="_blank">Whatsapp</a> para projetarmos a melhor solução para sua empresa.</p>
+    <!--portfolio-->
+    <section class="contato" id="orcamento">
+        <div class="container">
+            <h2><span>//</span> Vamos criar um projeto juntos?</h2>
+            <div class="fale-comigo">
+                <!-- <div class="form">
+                    <form method="POST" name="formContato">
+                        <div>
+                            <label>Nome</label>
+                            <input type="text" name="txtNome" placeholder="Digite seu nome" required>
+                        </div>
+                        <div>
+                            <label>E-mail</label>
+                            <input type="text" name="txtEmail" placeholder="Digite seu e-mail" required>
+                        </div>
+                        <div>
+                            <label>Mensagem</label>
+                            <textarea name="txtMensagem" cols="30 " rows="10 " placeholder="Conte um pouco sobre o seu projeto :) "></textarea>
+                        </div>
+                        <div>
+                            <button type="submit ">Enviar</button>
+                        </div>
+                    </form>
+                </div> -->
+                <!--form-->
+                <div class="whatsapp">
+                    <!-- <h2><span>//</span>Se preferir, podemos conversar pelo WhatsApp</h2> -->
+                    <a href="https://api.whatsapp.com/send?phone=5511957087077&text=Ol%C3%A1%2C%20quero%20criar%20um%20projeto%20incr%C3%ADvel!" target="_blank">(11) 95708 -7077</a>
+                </div>
+            </div>
         </div>
-    </section> -->
-
-    <footer>
-        <p>Desenvolvido por mim :)</p>
-    </footer>
-
-    <script src="main.js"></script>
+        <!--contato-->
+    </section>
+    <!--contato-->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
